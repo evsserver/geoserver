@@ -1198,7 +1198,7 @@ public class CatalogBuilder {
                 throw new Exception("Unable to acquire test coverage and color model for format:" + format.getName());
             }
             SampleModel sm = imageLayout.getSampleModel(null);
-            if(cm == null) {
+            if(sm == null) {
                 throw new Exception("Unable to acquire test coverage and sample model for format:" + format.getName());
             }
             final int numBands = sm.getNumBands();
